@@ -1,6 +1,4 @@
-package pg;
-
-import edu.princeton.cs.algs4.StdRandom;
+package PriorityQueue;
 
 public class PQ4ary<Key extends Comparable> implements PQ<Key> {
     private Key[] a = (Key[]) (new Comparable[2]);
@@ -67,14 +65,4 @@ public class PQ4ary<Key extends Comparable> implements PQ<Key> {
         System.err.println(" ");
     }
 
-    public static void main(String[] args) {
-        PQ4ary<Integer> pq = new PQ4ary<>();
-        for (int i = 0; i < 10; i++) {
-            pq.insert(StdRandom.uniform(100));
-        }
-        pq.print();
-        for (int i = 0; i < 10; i++) {
-            System.err.print(pq.delMax() + " ");
-        }
-    }
 }
