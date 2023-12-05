@@ -60,6 +60,7 @@ public class PQ4ary<Key extends Comparable> implements PQ<Key> {
             k = maxChild;
         }
     }
+    
     public void print() {
         for (int i = 0 ; i <= N; i++) System.err.print(" "+ a[i]);
         System.err.println(" ");
